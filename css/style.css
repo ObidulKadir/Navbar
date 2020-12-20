@@ -1,0 +1,93 @@
+.navbar{
+    top: 0%;
+    position: sticky;
+    z-index: 2;
+    color: rgb(136, 207, 207);
+}
+
+#about{
+    height: 100vh;
+    width: 100%;
+    background-color: aqua;
+    /* margin: 10px; */
+}
+#about h1,#service h1,#contact h1,#link h1 {
+    font-size: 40px;
+    text-align: center;
+    /* margin-top: 10px; */
+    padding: 10px;
+    color:#fff;
+   
+}
+#about p,#service p,#contact p,#link p{
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+#service{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(74, 85, 85);
+    /* margin: 10px; */
+}
+#contact{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(39, 105, 105, 0.575);
+    /* margin: 10px; */
+}
+#link{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(136, 207, 207);
+    /* margin: 10px; */
+}
+.vertical-nav {
+    min-width: 17rem;
+    width: 17rem;
+    border: 1px solid black;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 3px 3px 10px rgba(0,0,0,.1);
+    transition: all .5s;
+    /* z-index: 4; */
+}
+.page-content{
+    width: calc(100% - 17rem);
+    margin-left: 17rem;
+    transition: .4s;
+}
+/* for toggle behavior */
+
+#sidebar.active{
+    margin-left: -17rem;
+}
+#content.active{
+    width: 100%;
+    margin: 0;
+}
+@media (max-width: 768px) {
+    #sidebar {
+      margin-left: -17rem;
+    }
+    #sidebar.active {
+      margin-left: 0;
+    }
+    #content {
+      width: 100%;
+      margin: 0;
+    }
+    #content.active {
+      margin-left: 17rem;
+      width: calc(100% - 17rem);
+    }
+  }
+  body {
+    background: #599fd9;
+    background: -webkit-linear-gradient(to right, #599fd9, #c2e59c);
+    background: linear-gradient(to right, #599fd9, #c2e59c);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
